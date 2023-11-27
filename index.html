@@ -1,1 +1,152 @@
-<h2>HELLO!</h2>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Microscopy Facilities at the University of Birmingham</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   <style>
+       html, body {
+           height: 100%;
+       }
+       
+        /* xs */
+        img {
+            width: 300px;
+            height: auto;
+        }
+        /* sm */
+        @media (min-width: 768px) {
+            img {
+                width: 500px;
+            }
+        }
+        /* md */
+        @media (min-width: 992px) {
+            img {
+                width: 500px;
+            }
+        }
+        /* lg */
+        @media (min-width: 1200px) {
+            img {
+                width: 750px;
+            }
+}
+       
+    </style>
+</head>
+
+<body>
+    
+    <div class="h-100 d-flex align-items-center justify-content-center mainContentHolder">
+        <div class="text-center px-5">
+            <img id="imageHolder" class="mb-4" alt="logo" src="https://my.fom.ac.uk/sites/my.fom.ac.uk/files/civicrm/persist/contribute/images/images/MDS%20crested%20lock%20up_landscape.jpg" />
+            <div id="caption"><h3>Welcome to Microscopy Facilities in the College of Medical and Dental Sciences.</h3><h3>You can use this tool to find which microscopy tools might be right for your research.</h3>Click on the button below to start.</h3></div>
+            <div id="navigationButtons" class="mt-5 text-center">
+                
+                <button type="button" id="button1" data-destination="intro" class="btn btn-primary actionButton px-3 py-1 m-1" style="font-size:large;">Click here to start</button>
+                <button type="button" id="button2" data-destination="" class="btn btn-primary d-none actionButton px-3 py-1 m-1"  style="font-size:large;">NA</button>
+                <button type="button" id="button3" data-destination="" class="btn btn-primary d-none actionButton px-3 py-1 m-1"  style="font-size:large;">NA</button>
+                <button type="button" id="button4" data-destination="" class="btn btn-primary d-none actionButton px-3 py-1 m-1"  style="font-size:large;">NA</button>
+                
+                
+            </div>
+            
+        </div>
+
+                  
+    </div>
+    
+    
+    
+    
+    <script>
+        var jsonFile = '/mds/data.json';
+        let pagesDict;
+        
+        fetch(jsonFile)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok: ${response.status}');
+            }
+            return response.text(); // Parse the response as JSON
+          })
+          .then(data => {
+            // Now 'data' contains the JSON data from the file
+            jsonData = data;
+            console.log("IN ROUTINE");
+            console.log(data);
+            pagesDict = JSON.parse(jsonData);
+        
+          })
+          .catch(error => {
+            console.error('There was a problem fetching the JSON file:', error);
+          });
+
+        $('.actionButton').trigger("mouseup");
+        
+        $(".actionButton").on("click", function(e) {
+           
+            //Get the destination
+            var dest = $(this).attr("data-destination");
+            console.log(dest);
+            $(this).blur();
+            $(".mainContentHolder").animate({opacity: 0}, 750, "linear", function() {
+                
+                for(let i=0; i < pagesDict.pages.length; i++) { 
+            
+                    console.log(pagesDict.pages[i]); 
+                    if(pagesDict.pages[i].pageCode == dest) {
+
+                        $("#caption").html(pagesDict.pages[i].pageText);
+                        $("#currentPosition").html(pagesDict.pages[i].pageCode);
+                        $("#imageHolder").attr("src", pagesDict.pages[i].pageImage);
+
+                        if(pagesDict.pages[i].pageDest1!=='hide') {
+                            $("#button1").attr("data-destination", pagesDict.pages[i].pageDest1);
+                            $("#button1").html(pagesDict.pages[i].pageButton1);
+                            $("#button1").removeClass("d-none");
+                        } else {
+                            $("#button1").addClass("d-none");
+                        }
+
+                        if(pagesDict.pages[i].pageDest2!='hide') {
+                            $("#button2").attr("data-destination", pagesDict.pages[i].pageDest2);
+                            $("#button2").html(pagesDict.pages[i].pageButton2);
+                            $("#button2").removeClass("d-none");
+                        } else {
+                            $("#button2").addClass("d-none");
+                        }
+
+                        if(pagesDict.pages[i].pageDest3!='hide') {
+                            $("#button3").attr("data-destination", pagesDict.pages[i].pageDest3);
+                            $("#button3").html(pagesDict.pages[i].pageButton3);
+                            $("#button3").removeClass("d-none");
+                        } else {
+                            $("#button3").addClass("d-none");
+                        }
+
+                        if(pagesDict.pages[i].pageDest4!='hide') {
+                            $("#button4").attr("data-destination", pagesDict.pages[i].pageDest4);
+                            $("#button4").html(pagesDict.pages[i].pageButton4);
+                            $("#button4").removeClass("d-none");
+                        } else {
+                            $("#button4").addClass("d-none");
+                        }
+
+
+                    }
+
+                }
+                
+            });
+            
+            $(".mainContentHolder").animate({opacity: 1}, 750, "linear"); 
+            
+        });
+    </script>
+    
+</body>
