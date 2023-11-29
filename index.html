@@ -16,24 +16,62 @@
         img {
             width: 300px;
             height: auto;
+            
+        }
+       .actionButton, .facilityButton {
+            width: 300px;
         }
         /* sm */
         @media (min-width: 768px) {
             img {
+                max-width: 500px;
+                max-height: 500px;
+            }
+            .actionButton {
                 width: 500px;
             }
         }
         /* md */
         @media (min-width: 992px) {
             img {
+                max-width: 500px;
+                max-height: 500px;
+            }
+            #internalPadding {
+                padding-left: 150px;
+                padding-right: 150px;
+            }
+            .actionButton, .facilityButton {
                 width: 500px;
             }
         }
         /* lg */
         @media (min-width: 1200px) {
             img {
-                width: 750px;
+                max-width: 500px;
+                max-height: 500px;
             }
+            #internalPadding {
+                padding-left: 150px;
+                padding-right: 150px;
+            }
+            .actionButton, .facilityButton {
+                width: 650px;
+            }
+            
+       }
+       
+       #caption {
+           margin-left: 25px;
+           margin-right: 25px;   
+       }
+       
+       .big-margins-top {
+            margin-top:75px;
+       }
+       .big-margins-bottom {
+            margin-bottom:75px;
+        }
 }
        
     </style>
@@ -41,17 +79,21 @@
 
 <body>
     
-    <div class="h-100 d-flex align-items-center justify-content-center mainContentHolder">
-        <div class="text-center px-5">
-            <img id="imageHolder" class="mb-4" alt="logo" src="https://my.fom.ac.uk/sites/my.fom.ac.uk/files/civicrm/persist/contribute/images/images/MDS%20crested%20lock%20up_landscape.jpg" />
-            <div id="caption"><h3>Welcome to Microscopy Facilities in the College of Medical and Dental Sciences.</h3><h3>You can use this tool to find which microscopy tools might be right for your research.</h3>Click on the button below to start.</h3></div>
+    <div id="mch" class="h-100 d-flex align-items-center justify-content-center mainContentHolder">
+        <div id="internalPadding" class="text-center">
+            <img id="imageHolder" class="mb-4" alt="logo" src="mds-crested-lockup-portrait.jpg" />
+            <div id="caption"><h3>Welcome to Microscopy Facilities in the College of Medical and Dental Sciences.</h3><p class="mt-4">Click on the button below to start.</p></div>
+            <div id="contact"></div>
+            
             <div id="navigationButtons" class="mt-5 text-center">
                 
-                <button type="button" id="button1" data-destination="intro" class="btn btn-primary actionButton px-3 py-1 m-1" style="font-size:large;">Click here to start</button>
-                <button type="button" id="button2" data-destination="" class="btn btn-primary d-none actionButton px-3 py-1 m-1"  style="font-size:large;">NA</button>
-                <button type="button" id="button3" data-destination="" class="btn btn-primary d-none actionButton px-3 py-1 m-1"  style="font-size:large;">NA</button>
-                <button type="button" id="button4" data-destination="" class="btn btn-primary d-none actionButton px-3 py-1 m-1"  style="font-size:large;">NA</button>
-                
+                <button type="button" id="button1" data-destination="intro" class="btn btn-primary regularButton actionButton px-3 py-1 m-1" style="font-size:large;">Help me find a microscope</button><br class="actionButton1 d-none" />
+                <button type="button" id="button2" data-destination="" class="btn btn-primary d-none regularButton actionButton px-3 py-1 m-1"  style="font-size:large;">NA</button><br class="actionButton2 d-none" />
+                <button type="button" id="button3" data-destination="" class="btn btn-primary d-none regularButton actionButton px-3 py-1 m-1"  style="font-size:large;">NA</button><br class="actionButton3 d-none" />
+                <button type="button" id="button4" data-destination="" class="btn btn-primary d-none regularButton actionButton px-3 py-1 m-1"  style="font-size:large;">NA</button><br class="actionButton4 d-none" />
+                <button type="button" id="button5" data-destination="backToStart" class="btn btn-secondary d-none actionButton px-3 py-1 m-1"  style="font-size:large;">Back to start</button><br class="actionButton5 d-none" />
+                <button type="button" id="button7" data-destination="browseAll" class="btn btn-secondary actionButton px-3 py-1 m-1"  style="font-size:large;">Browse all microscopes</button><br />
+                <button type="button" id="button8" data-destination="showContact" class="btn btn-secondary actionButton px-3 py-1 m-1"  style="font-size:large;">Contact us</button>
                 
             </div>
             
@@ -64,7 +106,7 @@
     
     
     <script>
-        var jsonFile = '/mds/data.json';
+        var jsonFile = 'data.json';
         let pagesDict;
         
         fetch(jsonFile)
@@ -77,8 +119,6 @@
           .then(data => {
             // Now 'data' contains the JSON data from the file
             jsonData = data;
-            console.log("IN ROUTINE");
-            console.log(data);
             pagesDict = JSON.parse(jsonData);
         
           })
@@ -92,14 +132,12 @@
            
             //Get the destination
             var dest = $(this).attr("data-destination");
-            console.log(dest);
             $(this).blur();
             $(".mainContentHolder").animate({opacity: 0}, 750, "linear", function() {
                 
                 for(let i=0; i < pagesDict.pages.length; i++) { 
             
-                    console.log(pagesDict.pages[i]); 
-                    if(pagesDict.pages[i].pageCode == dest) {
+                     if(pagesDict.pages[i].pageCode == dest) {
 
                         $("#caption").html(pagesDict.pages[i].pageText);
                         $("#currentPosition").html(pagesDict.pages[i].pageCode);
@@ -109,37 +147,151 @@
                             $("#button1").attr("data-destination", pagesDict.pages[i].pageDest1);
                             $("#button1").html(pagesDict.pages[i].pageButton1);
                             $("#button1").removeClass("d-none");
+                            $(".actionButton1").removeClass("d-none");
                         } else {
                             $("#button1").addClass("d-none");
-                        }
+                            $(".actionButton1").addClass("d-none");
+                         }
 
                         if(pagesDict.pages[i].pageDest2!='hide') {
                             $("#button2").attr("data-destination", pagesDict.pages[i].pageDest2);
                             $("#button2").html(pagesDict.pages[i].pageButton2);
                             $("#button2").removeClass("d-none");
+                            $(".actionButton2").removeClass("d-none");
                         } else {
                             $("#button2").addClass("d-none");
-                        }
+                            $(".actionButton2").addClass("d-none");
+                         }
 
                         if(pagesDict.pages[i].pageDest3!='hide') {
                             $("#button3").attr("data-destination", pagesDict.pages[i].pageDest3);
                             $("#button3").html(pagesDict.pages[i].pageButton3);
                             $("#button3").removeClass("d-none");
-                        } else {
+                            $(".actionButton3").removeClass("d-none");
+                         } else {
                             $("#button3").addClass("d-none");
-                        }
+                            $(".actionButton3").addClass("d-none");
+                         }
 
                         if(pagesDict.pages[i].pageDest4!='hide') {
                             $("#button4").attr("data-destination", pagesDict.pages[i].pageDest4);
                             $("#button4").html(pagesDict.pages[i].pageButton4);
                             $("#button4").removeClass("d-none");
-                        } else {
+                            $(".actionButton4").removeClass("d-none");
+                         } else {
                             $("#button4").addClass("d-none");
+                            $(".actionButton4").addClass("d-none");
+                         }
+
+                        if(pagesDict.pages[i].pageContact!='hide') {
+                            $("#contact").html("<strong>For more information contact:</strong><br />" + pagesDict.pages[i].pageContact + "<br /><a href=\"mailto:" + pagesDict.pages[i].pageContactEmail + "\">" + pagesDict.pages[i].pageContactEmail + "</a>");
+                        } else {
+                            $("#contact").html("");
+                        }
+                        
+                         $("#button5").removeClass("d-none");
+                         $("#button5").removeClass("d-none");
+                         
+                        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+                        const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+                        
+                        console.log("VW: " + vw + "; VH: " + vh);
+                        
+                        if(pagesDict.pages[i].hasOwnProperty('equipment')) {
+                            if(vw<500) { 
+                                $("#mch").removeClass("align-items-center");
+                                $("#imageHolder").addClass("big-margins-top");
+                                $("#navigationButtons").addClass("big-margins-bottom");  
+                            }
+                        } else {
+                            $("#mch").addClass("align-items-center");
+                            //$("#mch").removeClass("big-margins-top");
+                            //$("#navigationButtons").removeClass("big-margins-bottom");  
+                            $("#imageHolder").addClass("big-margins-top");
+                            $("#navigationButtons").addClass("big-margins-bottom");  
                         }
 
-
                     }
-
+   
+                }
+                
+                if(dest=='showContact') {
+                    $("#mch").removeClass("align-items-center");
+                    $("#caption").html("<h3>Contacts</h3>");
+                    for(let i=0; i < pagesDict.contacts.length; i++) {
+                        $("#caption").html($("#caption").html() + "<br /><h5>" + pagesDict.contacts[i].facilityName + "</h5>" + pagesDict.contacts[i].facilityContact + "<br /><a href=\"mailto:" + pagesDict.contacts[i].facilityEmail + "\">" + pagesDict.contacts[i].facilityEmail + "</a><br /><br />");
+                    }
+                    $(".regularButton").addClass("d-none");
+                    $(".actionButton1,.actionButton2,.actionButton3,.actionButton4").addClass("d-none");
+                    $("#button5").removeClass("d-none");
+                }
+                
+                if(dest=='browseAll') {
+                    $("#mch").removeClass("align-items-center");
+                    $("#contact").html("");
+                    $("#caption").html("<h3 class=\"mb-5\">Browse all microscopes</h3>");
+                    for(let x=0; x < pagesDict.contacts.length; x++) {
+                        $("#caption").html($("#caption").html() + "<button type=\"button\" class=\"btn btn-primary facilityButton mb-1\" data-facility=\"" + x + "\">" + pagesDict.contacts[x].facilityName + "</button><br />");
+                    }
+                    
+                    var htmlToAdd = "";
+                    for(let x=0; x < pagesDict.contacts.length; x++) {
+                        htmlToAdd = "<div class=\"facilityDetail d-none\" id=\"fac" + x + "\"><h4 class=\"my-4\">" + pagesDict.contacts[x].facilityName + "</h4>";
+                        htmlToAdd = htmlToAdd + "<br /><h6>Contact: " + pagesDict.contacts[x].facilityContact + "</h6><p><a href=\"mailto:" + pagesDict.contacts[x].facilityEmail + "\">" + pagesDict.contacts[x].facilityEmail + "</a></p>";
+                        console.log(x);
+                        for(let y=0; y < pagesDict.pages.length; y++) {
+                            if(pagesDict.pages[y].hasOwnProperty("equipment")) {
+                                if(pagesDict.pages[y].equipmentLocation==pagesDict.contacts[x].facilityName) {
+                                    htmlToAdd = htmlToAdd + "<h5 class=\"mt-5 mb-2\">" + pagesDict.pages[y].equipmentName + "</h5>";
+                                    htmlToAdd = htmlToAdd + "<img src=\"" + pagesDict.pages[y].pageImage + "\" class=\"mb-2\" />";
+                                    htmlToAdd = htmlToAdd + "<p class=\"mb-3\">" + pagesDict.pages[y].equipmentText + "</p>";
+                                }
+                            }
+                        }
+                        htmlToAdd = htmlToAdd + "</div>";
+                        $("#caption").html($("#caption").html() + htmlToAdd);
+                    }
+                    
+                    $(document).on("click", ".facilityButton", function(e) { 
+                        $(".facilityDetail").addClass("d-none");
+                        $("#fac" + e.target.dataset.facility).removeClass("d-none");
+                    });
+                        
+                    $(".regularButton").addClass("d-none");
+                    $(".actionButton1,.actionButton2,.actionButton3,.actionButton4").addClass("d-none");
+                    $("#button5").removeClass("d-none");
+                }
+                
+                if(dest=='backToStart') {
+                 
+                    $("#mch").addClass("align-items-center");
+                    //$("#mch").removeClass("big-margins-top");
+                    //$("#navigationButtons").removeClass("big-margins-bottom");  
+                    $("#imageHolder").addClass("big-margins-top");
+                    $("#navigationButtons").addClass("big-margins-bottom"); 
+                    
+                    $("#caption").html("<h3>Welcome to Microscopy Facilities in the College of Medical and Dental Sciences.</h3><p class=\"mt-4\">Click on the button below to start.</p>");
+                    
+                    $("#button1").html("Help me find a microscope");
+                    $("#button1").attr("data-destination", "intro");
+                    $("#button1").removeClass("d-none");
+                    $(".actionButton1").removeClass("d-none");
+                    
+                    $("#button2").addClass("d-none");
+                    $(".actionButton2").addClass("d-none");
+                    
+                    $("#button3").addClass("d-none");
+                    $(".actionButton3").addClass("d-none");
+                    
+                    $("#button4").addClass("d-none");
+                    $(".actionButton4").addClass("d-none");
+                    
+                    $("#button5").addClass("d-none");
+                    $(".actionButton5").addClass("d-none");
+                    
+                    $("#contact").html("");
+                    $("#imageHolder").attr("src", "mds-crested-lockup-portrait.jpg");
+                    
                 }
                 
             });
@@ -150,3 +302,4 @@
     </script>
     
 </body>
+</html>

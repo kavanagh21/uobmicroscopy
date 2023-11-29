@@ -1,0 +1,640 @@
+{
+  "pages": [
+    
+    {"pageTitle": "Introduction", 
+      "pageCode": "intro",
+      "pageText": "<h5>We have a range of microscopes and tools for different situations. What type of imaging do you need to perform?</h5>",
+      "pageImage": "/mds/MDS-crested-lockup-landscape-banner.jpg",
+      "pageButton1": "Cells, slides, tissue sections (both static and live)",
+      "pageDest1": "invitro",
+      "pageButton2": "Live in vivo imaging",
+      "pageDest2": "invivo",
+      "pageButton3": "Single molecule imaging (both static and live)",
+      "pageDest3": "purposeOfObservation",
+      "pageButton4": "Whole organs or large tissue chunks",
+      "pageDest4": "recommendUltra",
+    
+      "pageContact": "hide",
+      "pageContactEmail": "hide"
+    },
+
+    
+ {
+    "pageTitle": "Live or Static",
+    "pageCode": "invitro",
+    "pageText": "<h5>Do you need to do live cell imaging?</h5>",
+    "pageButton1": "Yes, but short-term",
+    "pageDest1": "needConfocal",
+    "pageButton2": "Yes, but longer-term (hours/days)",
+    "pageDest2": "recommendIncucyte",
+    "pageButton3": "No",
+    "pageDest3": "static",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    "pageContact": "hide",
+    "pageContactEmail": "hide"
+  }, 
+      
+  
+  {
+    "pageTitle": "Static",
+    "pageCode": "static",
+    "pageText": "<h5>Do you need to image a large number of slides?</h5>",
+    "pageButton1": "Yes",
+    "pageDest1": "recommendSlidescanner",
+    "pageButton2": "No",
+    "pageDest2": "chooseConfocal",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    "pageContact": "hide",
+    "pageContactEmail": "hide"
+  },     
+     
+{
+    "pageTitle": "Need Confocal",
+    "pageCode": "needConfocal",
+    "pageText": "<h5>Do you need to image using confocal techniques?</h5>",
+    "pageButton1": "Yes",
+    "pageDest1": "chooseConfocal",
+    "pageButton2": "No",
+    "pageDest2": "recommendAxio",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    "pageContact": "hide",
+    "pageContactEmail": "hide"
+  },          
+    
+ {
+    "pageTitle": "Choose Confocal",
+    "pageCode": "chooseConfocal",
+    "pageText": "<h5>Do you need an improved signal-to-noise ratio and resolution over <em>normal</em> confocal techniques?</h5>",
+    "pageButton1": "Yes",
+    "pageDest1": "recommendAiry",
+    "pageButton2": "No",
+    "pageDest2": "recommendLSM780",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    "pageContact": "hide",
+    "pageContactEmail": "hide"
+  },     
+
+{
+    "pageTitle": "Ultra",
+    "pageCode": "recommendUltra",
+    "pageText": "<h3>COMPARE Advanced Imaging</h3><h4><strong>Ultramicroscopell Microscope</strong></h4><p>The UltramicroscopeII is a fluorescent microscope used for 3D imaging of optically-cleared samples such as whole mouse organs and small tissue samples (essentially 3-D histology). It is best suited for visualizing whole biological systems with cellular resolution. The system uses six light sheets in a dual-sided arrangement for homogeneous illumination, with the detection objective perpendicular to laser illumination. </p>",
+    "pageImage": "miltenyi-500x526.jpg",
+    "pageButton1": "hide",
+    "pageDest1": "hide",
+    "pageButton2": "hide",
+    "pageDest2": "hide",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    
+    "pageContact": "Dr Joao Correia",
+    "pageContactEmail": "j.n.correia@bham.ac.uk",
+
+    "equipment": "yes",
+    "equipmentLocation": "COMPARE Advanced Imaging",
+    "equipmentName": "Miltenyi Ultramicroscopell Microscope",
+    "equipmentText": "The UltramicroscopeII is a fluorescent microscope used for 3D imaging of optically-cleared samples such as whole mouse organs and small tissue samples (essentially 3-D histology). It is best suited for visualizing whole biological systems with cellular resolution. The system uses six light sheets in a dual-sided arrangement for homogeneous illumination, with the detection objective perpendicular to laser illumination."
+      
+  },      
+      
+{
+    "pageTitle": "Airyscan",
+    "pageCode": "recommendAiry",
+    "pageText": "<h3>Microscopy Facility</h3><h4><strong>Zeiss LSM880 Confocal Microscope with Airyscan Fast</strong></h4><p>The LSM 880 scanner has high sensitivity and is equipped with a 32 element galanium arsenide phosphide (GaAsP) Quasar detector, plus 2 standard PMTs and 1 transmitted light T-PMT. Equipped with a tuneable AOTF and capable of imaging up to 6 channels in multitrack configuration. The AxioObserver.Z1 inverted stand, is equipped with an environmental chamber with CO2 for live cell imaging. Focus stabilisation is through software and hardware based mechanisms (Definite focus II). Interchangeable stage inserts for slides, chamber slides, 35mm dishes and multiwall plates. Image capture in 3D and 4D, plus Lambda scanning, and spectral un-mixing capability.</p>",
+    "pageImage": "Zeiss-LSM-880600x449.jpg",
+    "pageButton1": "hide",
+    "pageDest1": "hide",
+    "pageButton2": "hide",
+    "pageDest2": "hide",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    
+    "pageContact": "Dr Alessandro Di Maio",
+    "pageContactEmail": "a.dimaio@bham.ac.uk",
+
+    "equipment": "yes",
+    "equipmentLocation": "Microscopy Facility",
+    "equipmentName": "Zeiss LSM880 Confocal Microscope with Airyscan Fast",
+    "equipmentText": "The LSM 880 scanner has high sensitivity and is equipped with a 32 element galanium arsenide phosphide (GaAsP) Quasar detector, plus 2 standard PMTs and 1 transmitted light T-PMT. Equipped with a tuneable AOTF and capable of imaging up to 6 channels in multitrack configuration. The AxioObserver.Z1 inverted stand, is equipped with an environmental chamber with CO2 for live cell imaging. Focus stabilisation is through software and hardware based mechanisms (Definite focus II). Interchangeable stage inserts for slides, chamber slides, 35mm dishes and multiwall plates. Image capture in 3D and 4D, plus Lambda scanning, and spectral un-mixing capability." 
+  },
+      
+{
+    "pageTitle": "Zeiss Axio Observer",
+    "pageCode": "recommendAxio",
+    "pageText": "<h3>Microscopy Facility</h3><h4><strong>Zeiss Axio Observer widefield system with Apotome 2.0 system</strong></h4><p>Motorised Axio Observer geared toward fluorescence performance with LED Colibri.2 illumination system that offers high speed switching times to the order of less than 1 ms. The unique feature of the Colibri.2 design in comparison with all other LED systems currently available is its unmatched homogeneity. The light path up to the illuminator output is the same for each LED module independent of its installation position. Four channels are included at 365nm, 470nm, 565nm, and 590nm. The system is equipped with an Hamamatsu ORCA Flash 4.0 for high speed and high sensitivity.<br /><br />In addition, the system is equipped with the Apotome.2 Confocal Structured Illumination device for creating optical sections with high contrast. Despite the magnification used, the ApoTome.2 automatically places the right grid in the beam path of the microscope. Reduction of unwanted background fluorescence increases with the grid frequency and the optical sections become thinner. Structures from outside of the focal plane are suppressed improving contrast and resolution of the optical section.</p>",
+    "pageImage": "zeiss-axio-w-apotome-ibr-1-cropped-588x442.png",
+    "pageButton1": "hide",
+    "pageDest1": "hide",
+    "pageButton2": "hide",
+    "pageDest2": "hide",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    
+    "pageContact": "Dr Alessandro Di Maio",
+    "pageContactEmail": "a.dimaio@bham.ac.uk",
+
+    "equipment": "yes",
+    "equipmentLocation": "Microscopy Facility",
+    "equipmentName": "Zeiss Axio Observer widefield system with Apotome 2.0 system",
+    "equipmentText": "Motorised Axio Observer geared toward fluorescence performance with LED Colibri.2 illumination system that offers high speed switching times to the order of less than 1 ms. The unique feature of the Colibri.2 design in comparison with all other LED systems currently available is its unmatched homogeneity. The light path up to the illuminator output is the same for each LED module independent of its installation position. Four channels are included at 365nm, 470nm, 565nm, and 590nm. The system is equipped with an Hamamatsu ORCA Flash 4.0 for high speed and high sensitivity.<br /><br />In addition, the system is equipped with the Apotome.2 Confocal Structured Illumination device for creating optical sections with high contrast. Despite the magnification used, the ApoTome.2 automatically places the right grid in the beam path of the microscope. Reduction of unwanted background fluorescence increases with the grid frequency and the optical sections become thinner. Structures from outside of the focal plane are suppressed improving contrast and resolution of the optical section."
+      
+  },
+      
+{
+    "pageTitle": "LSM780",
+    "pageCode": "recommendLSM780",
+    "pageText": "<h3>Microscopy Facility</h3><h4><strong>Zeiss LSM780 Confocal Microscope</strong></h4><p>The LSM 780 scanner has high sensitivity and is equipped with a 32 element galanium arsenide phosphide (GaAsP) Quasar detector, plus 2 standard PMTs and 1 transmitted light T-PMT. Equipped with a tuneable AOTF and capable of imaging up to 6 channels in multitrack configuration. The AxioObserver.Z1 inverted stand, is equipped with an environmental chamber with CO2 for live cell imaging. Focus stabilisation is through software and hardware based mechanisms. Interchangeable stage inserts for slides, chamber slides, 35mm dishes and multiwall plates. Image capture in 3D and 4D, plus Lambda scanning, and spectral un-mixing capability.</p>",
+    "pageImage": "Zeiss-LSM-780600x449.jpg",
+    "pageButton1": "hide",
+    "pageDest1": "hide",
+    "pageButton2": "hide",
+    "pageDest2": "hide",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    
+    "pageContact": "Dr Alessandro Di Maio",
+    "pageContactEmail": "a.dimaio@bham.ac.uk",
+
+    "equipment": "yes",
+    "equipmentLocation": "Microscopy Facility",
+    "equipmentName": "Zeiss LSM780 Confocal Microscope",
+    "equipmentText": "The LSM 780 scanner has high sensitivity and is equipped with a 32 element galanium arsenide phosphide (GaAsP) Quasar detector, plus 2 standard PMTs and 1 transmitted light T-PMT. Equipped with a tuneable AOTF and capable of imaging up to 6 channels in multitrack configuration. The AxioObserver.Z1 inverted stand, is equipped with an environmental chamber with CO2 for live cell imaging. Focus stabilisation is through software and hardware based mechanisms. Interchangeable stage inserts for slides, chamber slides, 35mm dishes and multiwall plates. Image capture in 3D and 4D, plus Lambda scanning, and spectral un-mixing capability."
+      
+  },
+      
+  {
+    "pageTitle": "Incucyte",
+    "pageCode": "recommendIncucyte",
+    "pageText": "<h3>Microscopy Facility</h3><h4><strong>Sartorius IncuCyte S3 Live-Cell Analysis System</strong></h4><p>The IncuCyte S3 system is ideal for long-term, automated live-cell analysis of up to 6 plates. The system resides inside an incubator which enables consistent maintenance of environmental controls at all times of the day and enables long-term experiments.<br /><br />Images can be captured in HD phase and fluorescence (green and red) at 4x, 10x and 20x.<br /><br />The IncuCyte software allows remote setup, data visualisation and data analysis. The basic version of the software provides capabilities for experiments such as cell counting, cell viability, cytotoxicity, cell cycle, immune cell, chemotaxis, whole well and dilution cloning.</p>",
+    "pageImage": "sartorius-incucyte-s3-live-cell-analysis-system.jpg",
+    "pageButton1": "hide",
+    "pageDest1": "hide",
+    "pageButton2": "hide",
+    "pageDest2": "hide",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    
+    "pageContact": "Dr Alessandro Di Maio",
+    "pageContactEmail": "a.dimaio@bham.ac.uk",
+
+    "equipment": "yes",
+    "equipmentLocation": "Microscopy Facility",
+    "equipmentName": "Sartorius IncuCyte S3 Live-Cell Analysis System",
+    "equipmentText": "The IncuCyte S3 system is ideal for long-term, automated live-cell analysis of up to 6 plates. The system resides inside an incubator which enables consistent maintenance of environmental controls at all times of the day and enables long-term experiments.<br /><br />Images can be captured in HD phase and fluorescence (green and red) at 4x, 10x and 20x.<br /><br />The IncuCyte software allows remote setup, data visualisation and data analysis. The basic version of the software provides capabilities for experiments such as cell counting, cell viability, cytotoxicity, cell cycle, immune cell, chemotaxis, whole well and dilution cloning."
+      
+  },    
+      
+    {
+    "pageTitle": "Slidescanner",
+    "pageCode": "recommendSlidescanner",
+    "pageText": "<h3>Microscopy Facility</h3><h4><strong>Zeiss Axio Scan .Z1 Slide Scanner</strong></h4><p>The fully automated Zeiss Axio Scan .Z1 slide scanner creates high resolution virtual slides of whole tissue sections. Full tissue scanning with automatic or interactive detection of the selected area. The large capacity 100 slide magazine allows for scanning of large batches. Easy slide loading with dedicated imaging frames. Fully adaptable and programmable with synchronised external high-speed excitation and internal emission filter wheels. Auto file saving to personalised storage in a secure server location.<br />- Slide acceptability and capacity<br />- Single width slide; (max 4 per mounting frame) x 25 width 24-26mm, length 74-76mm, depth 0.8-1.3mm.<br />- Double width slide; (max 2 per mounting frame) x 2 width 52mm, length 74-76mm, depth 0.8-1.3mm.<br />- Quad width slide; (max 1 per frame) width 104mm, length 74-76mm, depth 0.8-1.3mm (optional extra).</p>",
+    "pageImage": "Zeiss-Axioscanner-Z1-Slide-Scanner600x449.jpg",
+    "pageButton1": "hide",
+    "pageDest1": "hide",
+    "pageButton2": "hide",
+    "pageDest2": "hide",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    
+    "pageContact": "Dr Alessandro Di Maio",
+    "pageContactEmail": "a.dimaio@bham.ac.uk",
+
+    "equipment": "yes",
+    "equipmentLocation": "Microscopy Facility",
+    "equipmentName": "Zeiss Axio Scan .Z1 Slide Scanner",
+    "equipmentText": "The fully automated Zeiss Axio Scan .Z1 slide scanner creates high resolution virtual slides of whole tissue sections. Full tissue scanning with automatic or interactive detection of the selected area. The large capacity 100 slide magazine allows for scanning of large batches. Easy slide loading with dedicated imaging frames. Fully adaptable and programmable with synchronised external high-speed excitation and internal emission filter wheels. Auto file saving to personalised storage in a secure server location.<br />- Slide acceptability and capacity<br />- Single width slide; (max 4 per mounting frame) x 25 width 24-26mm, length 74-76mm, depth 0.8-1.3mm.<br />- Double width slide; (max 2 per mounting frame) x 2 width 52mm, length 74-76mm, depth 0.8-1.3mm.<br />- Quad width slide; (max 1 per frame) width 104mm, length 74-76mm, depth 0.8-1.3mm (optional extra)."
+      
+  },    
+      
+ {"comment": "START SINGLE MOLECULE ==========================================================================="},
+       
+ {
+    "pageTitle": "Purpose of Observation",
+    "pageCode": "purposeOfObservation",
+    "pageText": "<h5>What is the main purpose of your imaging?</h5>",
+    "pageButton1": "Cellular structure visualization",
+    "pageDest1": "sampleType",
+    "pageButton2": "Nanodomain organization studies",
+    "pageDest2": "resolutionRequirement",
+    "pageButton3": "Protein interactions analysis",
+    "pageDest3": "environmentalControl",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    "pageContact": "hide",
+    "pageContactEmail": "hide"
+  },
+  {
+    "pageTitle": "Sample Type",
+    "pageCode": "sampleType",
+    "pageText": "<h5>What type of sample are you working with?</h5>",
+    "pageButton1": "Single cells",
+    "pageDest1": "recommendSIM",
+    "pageButton2": "Tissue slices or Organoids",
+    "pageDest2": "resolutionRequirement",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    "pageContact": "hide",
+    "pageContactEmail": "hide"
+  },
+  {
+    "pageTitle": "Resolution Requirement",
+    "pageCode": "resolutionRequirement",
+    "pageText": "<h5>What level of spatial resolution do you need for your application?</h5>",
+    "pageButton1": "Approximately twice the resolution of standard fluorescence microscopy",
+    "pageDest1": "recommendSIM",
+    "pageButton2": "Super-resolved images with high precision",
+    "pageDest2": "recommendSTORM",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    "pageContact": "hide",
+    "pageContactEmail": "hide"
+  },
+  {
+    "pageTitle": "Environmental Control",
+    "pageCode": "environmentalControl",
+    "pageText": "<h5>Do you require control over environmental conditions during imaging?</h5>",
+    "pageButton1": "Yes (Temperature, humidity, and CO2)",
+    "pageDest1": "temporalResolution",
+    "pageButton2": "Partial (Temperature and humidity)",
+    "pageDest2": "recommendSMLM",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    "pageContact": "hide",
+    "pageContactEmail": "hide"
+  },
+  {
+    "pageTitle": "Temporal Resolution",
+    "pageCode": "temporalResolution",
+    "pageText": "<h5>What level of temporal resolution do you need for your study?</h5>",
+    "pageButton1": "Medium (~15 fps)",
+    "pageDest1": "recommendSIM",
+    "pageButton2": "Medium (~20 fps)",
+    "pageDest2": "recommendSTORM",
+    "pageButton3": "Fast (~50 fps)",
+    "pageDest3": "recommendSMLM",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    "pageContact": "hide",
+    "pageContactEmail": "hide"
+  },
+      
+  {
+    "pageTitle": "STORM",
+    "pageCode": "recommendSTORM",
+    "pageText": "<h3>COMPARE Advanced Imaging</h3><h4><strong>Stochastic Optical Reconstruction Microscopy (STORM)</strong></h4><p>Nikon N-STORM</p><p>Stochastic Optical Reconstruction Microscopy (STORM) and Photoactivated Localization Microscopy (PALM) are based on recurrently determining the position of single fluorescence emitters in live or fixed samples. The repeated localizations of individual molecules is then used to reconstruct super-resolved images. Applications include studying the nanodomains organization of signalling complexes or small subcellular structures like mitochondria or the cytoskeleton. <br /><br />Microscope Details<br />- Sample size: Single cells, tissue slices, organoids<br />- Main application: Stochastic Optical Reconstruction Microscopy (STORM)<br />- Modalities: dSTORM (2D and 3D), PALM, TIRF<br />- Spatial Resolution: ~20 nm lateral, ~50 nm axial<br />- Temporal resolution: medium (20 fps)<br />- Environmental control: Temperature, humidity and CO2<br />- Excitation Lasers: 405, 488, 560, 640 nm</p>",
+    "pageImage": "Storm.jpg",
+    "pageButton1": "hide",
+    "pageDest1": "hide",
+    "pageButton2": "hide",
+    "pageDest2": "hide",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    
+    "pageContact": "Joao Correia",
+    "pageContactEmail": "j.n.correia@bham.ac.uk",
+
+    "equipment": "yes",
+    "equipmentLocation": "COMPARE Advanced Imaging",
+    "equipmentName": "Nikon N-STORM",
+    "equipmentText": "Stochastic Optical Reconstruction Microscopy (STORM) and Photoactivated Localization Microscopy (PALM) are based on recurrently determining the position of single fluorescence emitters in live or fixed samples. The repeated localizations of individual molecules is then used to reconstruct super-resolved images. Applications include studying the nanodomains organization of signalling complexes or small subcellular structures like mitochondria or the cytoskeleton. <br /><br />Microscope Details<br />- Sample size: Single cells, tissue slices, organoids<br />- Main application: Stochastic Optical Reconstruction Microscopy (STORM)<br />- Modalities: dSTORM (2D and 3D), PALM, TIRF<br />- Spatial Resolution: ~20 nm lateral, ~50 nm axial<br />- Temporal resolution: medium (20 fps)<br />- Environmental control: Temperature, humidity and CO2<br />- Excitation Lasers: 405, 488, 560, 640 nm"
+      
+  },
+
+ {
+    "pageTitle": "Quad TIRF",
+    "pageCode": "recommendSMLM",
+    "pageText": "<h3>COMPARE Advanced Imaging</h3><h4><strong>Single-molecule localization microscopy (SMLM)</strong></h4><p>Cairn Quad TIRF Microscope</p><p>This custom 4-camera TIRF is capable of simultaneously imaging up to four different molecules (labelled with different colours) with single-molecule sensitivity, permitting analysis of movement of individual molecules as they diffuse and interact in living cells with high spatiotemporal resolution. This provides quantitative information on complex populations of molecules, including their nanoscale arrangement, diffusion and interactions.<br /><br />Microscope Details<br />- Sample size: single cell<br />- Main application: protein interactions/SMLM<br />- Modalities: SMLM, TIRF, dSTORM (2D and 3D), PALM (2D and 3D), FRAP, FRET<br />- Spatial Resolution: ~20 nm lateral, ~50 nm axial<br />- Temporal resolution: fast (~50 fps)<br />- Environmental control: Tempterature and humidity<br />- Excitation Lasers: 405, 445, 488, 514, 561 and 637 nm</p>",
+    "pageImage": "cairns-quad-600x663.png",
+    "pageButton1": "hide",
+    "pageDest1": "hide",
+    "pageButton2": "hide",
+    "pageDest2": "hide",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    
+    "pageContact": "Joao Correia",
+    "pageContactEmail": "j.n.correia@bham.ac.uk",
+
+    "equipment": "yes",
+    "equipmentLocation": "COMPARE Advanced Imaging",
+    "equipmentName": "Cairn Quad TIRF Microscope",
+    "equipmentText": "<p>This custom 4-camera TIRF is capable of simultaneously imaging up to four different molecules (labelled with different colours) with single-molecule sensitivity, permitting analysis of movement of individual molecules as they diffuse and interact in living cells with high spatiotemporal resolution. This provides quantitative information on complex populations of molecules, including their nanoscale arrangement, diffusion and interactions.<br /><br />Microscope Details<br />- Sample size: single cell<br />- Main application: protein interactions/SMLM<br />- Modalities: SMLM, TIRF, dSTORM (2D and 3D), PALM (2D and 3D), FRAP, FRET<br />- Spatial Resolution: ~20 nm lateral, ~50 nm axial<br />- Temporal resolution: fast (~50 fps)<br />- Environmental control: Tempterature and humidity<br />- Excitation Lasers: 405, 445, 488, 514, 561 and 637 nm"
+      
+  },
+
+      
+  {
+    "pageTitle": "SIM",
+    "pageCode": "recommendSIM",
+    "pageText": "<h3>COMPARE Advanced Imaging</h3><h4><strong>Structured Illumination Microscopy</strong></h4><p>Nikon N-SIM S</p><p>SIM (Structured Illumination Microscopy) is a form of super resolution microscopy that allows living and fixed fluorescent samples to be observed at approximately twice the resolution of a standard fluorescence microscope. Imaging at this higher resolution can reveal structural sub-cellular organisation which would otherwise be masked on a standard microscope.<br /><br />Microscope Details<br /><br />- Sample size: single cells, organoids<br />- Main application: Structured Illumination Microscopy (SIM)<br />- Modalities: 2D and 3D SIM, TIRF SIM<br />- Spatial resolution: ~115 nm lateral, ~270 nm axial<br />- Temporal resolution: medium (~15 fps)<br />- Environmental control: Temperature, humidity and CO2<br />- Excitation Lasers: 405, 488, 560, 640 nm</p>",
+    "pageImage": "nikons-n-sim-s-500x525.jpg",
+    "pageButton1": "hide",
+    "pageDest1": "hide",
+    "pageButton2": "hide",
+    "pageDest2": "hide",
+    "pageButton3": "hide",
+    "pageDest3": "hide",
+    "pageButton4": "hide",
+    "pageDest4": "hide",
+    
+    "pageContact": "Joao Correia",
+    "pageContactEmail": "j.n.correia@bham.ac.uk",
+
+    "equipment": "yes",
+    "equipmentLocation": "COMPARE Advanced Imaging",
+    "equipmentName": "Nikon N-SIM S",
+    "equipmentText": "SIM (Structured Illumination Microscopy) is a form of super resolution microscopy that allows living and fixed fluorescent samples to be observed at approximately twice the resolution of a standard fluorescence microscope. Imaging at this higher resolution can reveal structural sub-cellular organisation which would otherwise be masked on a standard microscope.<br /><br />Microscope Details<br /><br />- Sample size: single cells, organoids<br />- Main application: Structured Illumination Microscopy (SIM)<br />- Modalities: 2D and 3D SIM, TIRF SIM<br />- Spatial resolution: ~115 nm lateral, ~270 nm axial<br />- Temporal resolution: medium (~15 fps)<br />- Environmental control: Temperature, humidity and CO2<br />- Excitation Lasers: 405, 488, 560, 640 nm"
+      
+  },
+      
+ {"comment": "START IN VIVO IMAGING==========================================================================="},
+      
+  
+    {"pageTitle": "In vivo imaging", 
+      "pageCode": "invivo",
+      "pageText": "<h5>What do you need to image or visualise?</h5>",
+      "pageImage": "/mds/MDS-crested-lockup-landscape-banner.jpg",
+     
+      "pageButton1": "Circulating cells",
+      "pageDest1": "ivm",
+     
+      "pageButton2": "Tissue structures",
+      "pageDest2": "ivm",
+     
+      "pageButton3": "Blood perfusion",
+      "pageDest3": "lcsi",
+     
+      "pageButton4": "hide",
+      "pageDest4": "hide",
+   
+      "pageContact": "hide",
+      "pageContactEmail": "hide"
+    },
+    
+      
+          
+    {"pageTitle": "Intravital Microscopy", 
+      "pageCode": "ivm",
+      "pageText": "<h5>Do you need to image at any particularly enhanced depth? As a rough estimate, depths of &gt;100 microns below the tissue surface?</h5>",
+      "pageImage": "/mds/MDS-crested-lockup-landscape-banner.jpg",
+     
+      "pageButton1": "No, surface imaging should be fine",
+      "pageDest1": "ivmconfocal",
+     
+      "pageButton2": "Yes, I need to image at an increased depth",
+      "pageDest2": "multiphoton",
+     
+      "pageButton3": "hide",
+      "pageDest3": "hide",
+     
+      "pageButton4": "hide",
+      "pageDest4": "hide",
+   
+      "pageContact": "hide",
+      "pageContactEmail": "hide"
+    },
+      
+    {"pageTitle": "Intravital Microscopy", 
+      "pageCode": "ivmconfocal",
+      "pageText": "<h5>We have both upright and inverted confocal microscopes for Intravital Imaging. Do you know which one you need?</h5>",
+      "pageImage": "/mds/MDS-crested-lockup-landscape-banner.jpg",
+     
+      "pageButton1": "No, help me decide",
+      "pageDest1": "ivmconfocalchoice",
+     
+      "pageButton2": "Yes, I need an upright microscope",
+      "pageDest2": "ivmupright",
+     
+      "pageButton3": "Yes, I need an inverted microscope",
+      "pageDest3": "ivminvert",
+     
+      "pageButton4": "hide",
+      "pageDest4": "hide",
+   
+      "pageContact": "hide",
+      "pageContactEmail": "hide"
+    },
+      
+    {"pageTitle": "Intravital Microscopy", 
+      "pageCode": "ivmconfocalchoice",
+      "pageText": "<h5>Which organ do you want to image?</h5>",
+      "pageImage": "/mds/MDS-crested-lockup-landscape-banner.jpg",
+     
+      "pageButton1": "Liver",
+      "pageDest1": "ivminvert",
+     
+      "pageButton2": "Spleen",
+      "pageDest2": "ivminvert",
+     
+      "pageButton3": "Heart",
+      "pageDest3": "ivmupright",
+     
+      "pageButton4": "Not listed",
+      "pageDest4": "ivmconfocalchoice2",
+   
+      "pageContact": "hide",
+      "pageContactEmail": "hide"
+    },
+      
+      {"pageTitle": "Intravital Microscopy", 
+      "pageCode": "ivmconfocalchoice2",
+      "pageText": "<h5>Which organ do you want to image?</h5>",
+      "pageImage": "/mds/MDS-crested-lockup-landscape-banner.jpg",
+     
+      "pageButton1": "Intestine",
+      "pageDest1": "ivminvert",
+     
+      "pageButton2": "Pancreas",
+      "pageDest2": "ivmupright",
+     
+      "pageButton3": "Carotid artery",
+      "pageDest3": "ivmupright",
+     
+      "pageButton4": "Not listed",
+      "pageDest4": "ivmconfocalchoice3",
+   
+      "pageContact": "hide",
+      "pageContactEmail": "hide"
+    },
+
+    { "pageTitle": "Intravital Microscopy", 
+      "pageCode": "ivmconfocalchoice3",
+      "pageText": "<h5>Which organ do you want to image?</h5>",
+      "pageImage": "/mds/MDS-crested-lockup-landscape-banner.jpg",
+     
+      "pageButton1": "Mesentery",
+      "pageDest1": "ivminvert",
+     
+      "pageButton2": "Kidney",
+      "pageDest2": "ivminvert",
+     
+      "pageButton3": "Skin",
+      "pageDest3": "ivminvert",
+     
+      "pageButton4": "Not listed",
+      "pageDest4": "ivmupright",
+   
+      "pageContact": "hide",
+      "pageContactEmail": "hide"
+    },
+
+      
+      
+  {"pageTitle": "Laser Speckle Contrast Imaging", 
+      "pageCode": "lcsi",
+      "pageText": "<h3>Intravital Imaging Suite</h3><h4><strong>Laser Speckle Contrast Imaging</strong></h4><p>Moor FLPI-2 – Full-field laser perfusion imager</p><p>The FLPI-2 is a full field laser perfusion imager which utilises Laser Speckle Contrast Imaging to non-invasively monitor tissue perfusion. The device delivers real-time, high-resolution perfusion images that can be obtained from any exposed tissue with minimal additional surgical intervention required. It has three measurement modes with flexible sampling rates (spatial, temporal and sliding window algorithms) to optimise your data for frame rate, spatial resolution and file size. The setup can provide spatial resolution of 10 microns per pixel.</p>",
+      "pageImage": "speckle.png",
+   
+      "pageButton1": "hide",
+      "pageDest1": "hide",
+   
+      "pageButton2": "hide",
+      "pageDest2": "hide",
+   
+      "pageButton3": "hide",
+      "pageDest3": "hide",
+   
+      "pageButton4": "hide",
+      "pageDest4": "hide",
+   
+      "pageContact": "Dean Kavanagh",
+      "pageContactEmail": "d.kavanagh@bham.ac.uk",
+   
+      "equipment": "yes",
+      "equipmentLocation": "Intravital Imaging Suite",
+      "equipmentName": "Moor FLPI-2 Full Field Laser Speckle Perfusion Imager",
+      "equipmentText": "Moor FLPI-2 – Full-field laser perfusion imager</p><p>The FLPI-2 is a full field laser perfusion imager which utilises Laser Speckle Contrast Imaging to non-invasively monitor tissue perfusion. The device delivers real-time, high-resolution perfusion images that can be obtained from any exposed tissue with minimal additional surgical intervention required. It has three measurement modes with flexible sampling rates (spatial, temporal and sliding window algorithms) to optimise your data for frame rate, spatial resolution and file size. The setup can provide spatial resolution of 10 microns per pixel."
+   
+    },
+      
+     {"pageTitle": "Inverted intravital microscopy", 
+      "pageCode": "ivminvert",
+      "pageText": "<h3>Intravital Imaging Suite</h3><h4><strong>Spinning-disk Confocal Imaging</strong></h4><p>Olympus IX81 – Inverted Confocal Microscope</p><p>The IX81 is an inverted confocal microscope that is best suited to solid tissues which can form a flat surface for imaging from below (either naturally or with manipulation). The microscope has illumination from both a widefield source and a 3i LaserStack (488nm, 568nm, 647nm). The microscope is fitted with a Nipkow spinning disk confocal head which supplies return light to a QImaging OptiMOS camera. As a result of the orientation of this microscope and the sample, all of the objectives available for this setup are air objectives.</p>",
+      "pageImage": "invert.jpg",
+   
+      "pageButton1": "hidek",
+      "pageDest1": "hide",
+   
+      "pageButton2": "hide",
+      "pageDest2": "hide",
+   
+      "pageButton3": "hide",
+      "pageDest3": "hide",
+   
+      "pageButton4": "hide",
+      "pageDest4": "hide",
+   
+      "pageContact": "Dean Kavanagh",
+      "pageContactEmail": "d.kavanagh@bham.ac.uk",
+      
+      "equipment": "yes",
+      "equipmentLocation": "Intravital Imaging Suite",
+      "equipmentName": "Olympus IX81 – Inverted Confocal Microscope",
+      "equipmentText": "Olympus IX81 – Inverted Confocal Microscope</p><p>The IX81 is an inverted confocal microscope that is best suited to solid tissues which can form a flat surface for imaging from below (either naturally or with manipulation). The microscope has illumination from both a widefield source and a 3i LaserStack (488nm, 568nm, 647nm). The microscope is fitted with a Nipkow spinning disk confocal head which supplies return light to a QImaging OptiMOS camera. As a result of the orientation of this microscope and the sample, all of the objectives available for this setup are air objectives."
+ 
+   
+    },
+      
+      {"pageTitle": "Upright intravital microscopy", 
+      "pageCode": "ivmupright",
+      "pageText": "<h3>Intravital Imaging Suite</h3><h4><strong>Spinning-disk Confocal Imaging</strong></h4><p>Zeiss Examiner X1 – Upright Confocal Microscope</p><p>The Zeiss Examiner X1 is an upright confocal microscope that is suited to imaging of both transparent tissues and solid tissues that can be positioned flatly for imaging. The confocal nature of the microscope allows for improved imaging in the Z-axis which may be useful for some tissues where the structures of interest are not superficial (if structures are very deep, the multiphoton may be better suited). The microscope is equipped with a CSU-X1 Nipkow confocal spinning disk head, allowing for realtime confocal imaging in live animals. Compared to the Olympus BX61, the confocal setup on the Zeiss microscope allows the use of lower exposure times than our other microscopes.<br /><br />The confocal head is supplied by excitation light from a 3i LaserStack (488nm, 568nm, 647nm lines). The confocal head is fitted with a Photometrics Prime BSI detector. The microscope also has a widefield camera and light source, allowing for non-confocal imaging. The microscope also has a laser ablation system attached (Ablate!) for  the generation of vascular thrombosis. A warming system is provided with digital temperature feedback for maintaining superfusate buffer at pre-defined temperature. The microscope has a Prior electronic stage, allowing for movement to be controlled by a joystick next to the microscope.</p>",
+      "pageImage": "ivm4.jpg",
+   
+      "pageButton1": "hide",
+      "pageDest1": "hide",
+   
+      "pageButton2": "hide",
+      "pageDest2": "hide",
+   
+      "pageButton3": "hide",
+      "pageDest3": "hide",
+   
+      "pageButton4": "hide",
+      "pageDest4": "hide",
+   
+      "pageContact": "Dean Kavanagh",
+      "pageContactEmail": "d.kavanagh@bham.ac.uk",
+       
+      "equipment": "yes",
+      "equipmentLocation": "Intravital Imaging Suite",
+      "equipmentName": "Zeiss Examiner X1 – Upright Confocal Microscope",
+      "equipmentText": "<p>The Zeiss Examiner X1 is an upright confocal microscope that is suited to imaging of both transparent tissues and solid tissues that can be positioned flatly for imaging. The confocal nature of the microscope allows for improved imaging in the Z-axis which may be useful for some tissues where the structures of interest are not superficial (if structures are very deep, the multiphoton may be better suited). The microscope is equipped with a CSU-X1 Nipkow confocal spinning disk head, allowing for realtime confocal imaging in live animals. Compared to the Olympus BX61, the confocal setup on the Zeiss microscope allows the use of lower exposure times than our other microscopes.<br /><br />The confocal head is supplied by excitation light from a 3i LaserStack (488nm, 568nm, 647nm lines). The confocal head is fitted with a Photometrics Prime BSI detector. The microscope also has a widefield camera and light source, allowing for non-confocal imaging. The microscope also has a laser ablation system attached (Ablate!) for  the generation of vascular thrombosis. A warming system is provided with digital temperature feedback for maintaining superfusate buffer at pre-defined temperature. The microscope has a Prior electronic stage, allowing for movement to be controlled by a joystick next to the microscope."
+ 
+   
+    },
+      
+      {"pageTitle": "Multiphoton", 
+      "pageCode": "multiphoton",
+      "pageText": "<h3>Intravital Imaging Suite</h3><h4><strong>Two-photon Microscopy</strong></h4><p>Olympus FLUOView FVMPE-RS – Upright multiphoton Microscope</p><p>The FluoView FVMPE-RS is an upright multiphoton microscope. It is a dual-laser system, with a 1040nm fixed beam and a 690nm-1300nm tunable beam. The microscope is also fitted with a separate external stimulation source for optogenetics and photoactivation. These can be used simultaneously, providing true simultaneous excitation of multiple flourophores. The scan head has both Resonant and Galvano scanning modes allowing for the capture of high-quality or high-speed imaging. Identification of localised areas of interest allow scan rates up to 430fps in Resonance mode. There are four detectors on the setup, including two gallium arsenide phosphide (GaAsP) detectors which are considerably more sensitive than conventional PMTs. <br /><br />The setup has five separate emission filters allowing for the capture of a diverse range of fluorophores. A dichroic mirror is available to split the returning emission light, allowing for the capture of up to four fluorophores simultaneously. The microscope has several objectives available, including a 25x multiphoton-optimised objective which is customised to the multiphoton set up. Smart alignment and digitally controlled internal optics ensures that the entire lightpath is optimised for the wavelength and objectives used. The microscope has a Prior electronic stage, allowing for movement to be controlled by a joystick next to the microscope. This microscope is available for use in non-animal experiments, please contact us for further information. </p>",
+      "pageImage": "2p.jpg",
+       
+      "pageButton1": "hide",
+      "pageDest1": "hide",
+   
+      "pageButton2": "hide",
+      "pageDest2": "hide",
+   
+      "pageButton3": "hide",
+      "pageDest3": "hide",
+   
+      "pageButton4": "hide",
+      "pageDest4": "hide",
+   
+      "pageContact": "Dean Kavanagh",
+      "pageContactEmail": "d.kavanagh@bham.ac.uk",
+       
+      "equipment": "yes",
+      "equipmentLocation": "Intravital Imaging Suite",
+      "equipmentName": "Olympus FLUOView FVMPE-RS – Upright multiphoton Microscope",
+      "equipmentText": "The FluoView FVMPE-RS is an upright multiphoton microscope. It is a dual-laser system, with a 1040nm fixed beam and a 690nm-1300nm tunable beam. The microscope is also fitted with a separate external stimulation source for optogenetics and photoactivation. These can be used simultaneously, providing true simultaneous excitation of multiple flourophores. The scan head has both Resonant and Galvano scanning modes allowing for the capture of high-quality or high-speed imaging. Identification of localised areas of interest allow scan rates up to 430fps in Resonance mode. There are four detectors on the setup, including two gallium arsenide phosphide (GaAsP) detectors which are considerably more sensitive than conventional PMTs. <br /><br />The setup has five separate emission filters allowing for the capture of a diverse range of fluorophores. A dichroic mirror is available to split the returning emission light, allowing for the capture of up to four fluorophores simultaneously. The microscope has several objectives available, including a 25x multiphoton-optimised objective which is customised to the multiphoton set up. Smart alignment and digitally controlled internal optics ensures that the entire lightpath is optimised for the wavelength and objectives used. The microscope has a Prior electronic stage, allowing for movement to be controlled by a joystick next to the microscope. This microscope is available for use in non-animal experiments, please contact us for further information."
+ 
+   
+    }
+      
+      
+      
+    
+    
+  ],
+    
+    "contacts": [
+        { "facilityName": "Intravital Imaging Suite", "facilityContact": "Dr Dean Kavanagh", "facilityEmail": "d.kavanagh@bham.ac.uk" },
+        { "facilityName": "COMPARE Advanced Imaging", "facilityContact": "Dr Joao Correia", "facilityEmail": "j.n.correia@bham.ac.uk" },
+        { "facilityName": "Microscopy Facility", "facilityContact": "Dr Alessandro Di Maio", "facilityEmail": "a.dimaio@bham.ac.uk" }   
+    ]
+    
+    
+        
+        
+}
