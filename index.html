@@ -238,7 +238,7 @@
                     var htmlToAdd = "";
                     for(let x=0; x < pagesDict.contacts.length; x++) {
                         htmlToAdd = "<div class=\"facilityDetail d-none\" id=\"fac" + x + "\"><h4 class=\"my-4\">" + pagesDict.contacts[x].facilityName + "</h4>";
-                        htmlToAdd = htmlToAdd + "<br /><h6>Contact: " + pagesDict.contacts[x].facilityContact + "</h6><p><a href=\"mailto:" + pagesDict.contacts[x].facilityEmail + "\">" + pagesDict.contacts[x].facilityEmail + "</a></p>";
+                        htmlToAdd = htmlToAdd + "<br /><h6>Contact: " + pagesDict.contacts[x].facilityContact + "</h6><p><a href=\"mailto:" + pagesDict.contacts[x].facilityEmail + "\">" + pagesDict.contacts[x].facilityEmail + "</a><br /><a href=\"" + pagesDict.contacts[x].facilityWebsite + "\">Visit Website</a><br /><br /></p>";
                         console.log(x);
                         for(let y=0; y < pagesDict.pages.length; y++) {
                             if(pagesDict.pages[y].hasOwnProperty("equipment")) {
@@ -260,6 +260,7 @@
                         
                     $(".regularButton").addClass("d-none");
                     $(".actionButton1,.actionButton2,.actionButton3,.actionButton4").addClass("d-none");
+                    $(".actionButton5").removeClass("d-none");
                     $("#button5").removeClass("d-none");
                 }
                 
