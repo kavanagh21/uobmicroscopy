@@ -219,7 +219,7 @@
                     $("#mch").removeClass("align-items-center");
                     $("#caption").html("<h3>Contacts</h3>");
                     for(let i=0; i < pagesDict.contacts.length; i++) {
-                        $("#caption").html($("#caption").html() + "<br /><h5>" + pagesDict.contacts[i].facilityName + "</h5>" + pagesDict.contacts[i].facilityContact + "<br /><a href=\"mailto:" + pagesDict.contacts[i].facilityEmail + "\">" + pagesDict.contacts[i].facilityEmail + "</a><br /><br />");
+                        $("#caption").html($("#caption").html() + "<br /><h5>" + pagesDict.contacts[i].facilityName + "</h5>" + pagesDict.contacts[i].facilityContact + "<br /><a href=\"mailto:" + pagesDict.contacts[i].facilityEmail + "\">" + pagesDict.contacts[i].facilityEmail + "</a><br /><a href=\"" + pagesDict.contacts[i].facilityWebsite + "\">Visit Website</a><br /><br />");
                     }
                     $(".regularButton").addClass("d-none");
                     $(".actionButton1,.actionButton2,.actionButton3,.actionButton4").addClass("d-none");
